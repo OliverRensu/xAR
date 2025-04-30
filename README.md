@@ -1,6 +1,6 @@
 # Beyond Next-Token: Next-X Prediction for Autoregressive Visual Generation
 
-[![arXiv](https://img.shields.io/badge/arXiv%20paper-2502.20388v1-b31b1b.svg)](https://arxiv.org/abs/2502.20388v1)&nbsp;
+[![arXiv](https://img.shields.io/badge/arXiv%20paper-2502.20388-b31b1b.svg)](https://arxiv.org/abs/2502.20388)&nbsp;
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/beyond-next-token-next-x-prediction-for/image-generation-on-imagenet-256x256)](https://paperswithcode.com/sota/image-generation-on-imagenet-256x256?flowar-scale-wise-autoregressive-image)
 [![huggingface](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-xAR-yellow)](https://huggingface.co/OliverRen/xAR)&nbsp;
 [![project page](https://img.shields.io/badge/project%20page-lightblue)](https://oliverrensu.github.io/project/xAR/)
