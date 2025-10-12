@@ -6,6 +6,10 @@
 [![project page](https://img.shields.io/badge/project%20page-lightblue)](https://oliverrensu.github.io/project/xAR/)
 
 This repository is the official implementation of our [Beyond Next-Token: Next-X Prediction for Autoregressive Visual Generation](https://arxiv.org/abs/2502.20388)
+
+### 🎉xAR is accepted by ICCV2025!
+
+
 ## Introduction
 Autoregressive (AR) modeling, known for its next-token prediction paradigm, underpins state-of-the-art language and visual generative models. Traditionally, a token is treated as the smallest prediction unit, often a discrete symbol in language or a quantized patch in vision. However, the optimal token definition for 2D image structures remains an open question. Moreover, AR models suffer from exposure bias, where teacher forcing during training leads to error accumulation at inference. In this paper, we propose xAR, a generalized AR framework that extends the notion of a token to an entity X, which can represent an individual patch token, a cell (a k×k grouping of neighboring patches), a subsample (a non-local grouping of distant patches), a scale (coarse-to-fine resolution), or even a whole image. Additionally, we reformulate discrete token classification as continuous entity regression, leveraging flow-matching methods at each AR step. This approach conditions training on noisy entities instead of ground truth tokens, leading to Noisy Context Learning, which effectively alleviates exposure bias. As a result, xAR offers two key advantages: (1) it enables flexible prediction units that capture different contextual granularity and spatial structures, and (2) it mitigates exposure bias by avoiding reliance on teacher forcing. On ImageNet-256 generation benchmark, our base model, xAR-B (172M), outperforms DiT-XL/SiT-XL (675M) while achieving 20× faster inference. Meanwhile, xAR-H sets a new state-of-the-art with an FID of 1.24, running 2.2× faster than the previous best-performing model without relying on vision foundation modules (e.g., DINOv2) or advanced guidance interval sampling.
 
@@ -99,7 +103,7 @@ If you have any question, feel free to contact [Sucheng Ren](oliverrensu@gmail.c
        title={Beyond Next-Token: Next-X Prediction for Autoregressive Visual Generation}, 
        author={Sucheng, Ren and Qihang, Yu and Ju, He and Xiaohui, Shen and Alan, Yuille and Liang-Chieh, Chen},
        year={2025},
-        journal={arXiv preprint arXiv:2502.20388}}
+       booktitle = {ICCV}}
 ```
 
 ## Acknowledgement
